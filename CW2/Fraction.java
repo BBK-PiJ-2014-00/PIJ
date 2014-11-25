@@ -95,11 +95,8 @@ public class Fraction {
 	public Fraction negate(){
 		int num = 0 - this.getNumerator();
         int denom = this.getDenominator();
-		System.out.println("Inside negate" + num + " " + denom);
-        Fraction returnValue = new Fraction(num, denom);
-		System.out.println("Inside negate1" + num + " " + denom + " " + returnValue);
+		Fraction returnValue = new Fraction(num, denom);
 		returnValue.simplify();
-		System.out.println("Inside negate2" + num + " " + denom + " " + returnValue);
 		return returnValue;
 	}
 	
